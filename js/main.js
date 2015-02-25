@@ -19,6 +19,14 @@ function takePhoto() {
 	});
 }
 
+//Capture Photo from main page
+function takeMainPic() {
+	navigator.camera.getPicture(onPhotoDataMainSuccess,onError,{
+		quality:50,
+		destinationType: destinationType.DATA_URL
+	});
+}
+
 //Get Photo from Library
 function getPhoto(source) {
 	navigator.camera.getPicture(onPhotoURISuccess,onError,{
@@ -32,6 +40,18 @@ function getPhoto(source) {
 function onPhotoDataSuccess(imageData) {
 	//set Image Handler
 	var dataImage = document.getElementById('dataImage');
+
+	//unhide
+	dataImage.style.display = 'block';
+
+	//show photo
+	dataImage.src = "data:image/jpeg;base64," + imageData;
+}
+
+//If we capture a photo from main page
+function onPhotoDataMainSuccess(imageData) {
+	//set Image Handler
+	var dataImage = document.getElementById('imgMain');
 
 	//unhide
 	dataImage.style.display = 'block';
