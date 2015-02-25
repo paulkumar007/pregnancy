@@ -43,13 +43,13 @@ function onPhotoDataSuccess(imageData) {
 //If we get an image
 function onPhotoURISuccess(imageURI) {
 	//set Image Handler
-	var uriImage = document.getElementById('uriImage');
+	var dataImage = document.getElementById('dataImage');
 
 	//unhide
-	uriImage.style.display = 'block';
+	dataImage.style.display = 'block';
 
 	//show photo
-	uriImage.src = imageURI;
+	dataImage.src = imageURI;
 }
 
 //Handle errors
