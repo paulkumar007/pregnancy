@@ -30,18 +30,7 @@
             </div>
       	</div>
      </div>
-  <div id="footer">
-  		<div class="container">
-  			<ul class="reset">
-            	<li><a href="index.html"><img src="images/home.jpg"></a></li>
-                <li><a href="my_baby.html"><img src="images/my-baby.jpg"></a></li>
-                <li><a href="trackers.html"><img src="images/trackers.jpg"></a></li>
-                <li><a href="#"><img src="images/photo.jpg"></a></li>
-                <li><a href="personalize.html"><img src="images/personalize.jpg"></a></li>
-            </ul>
-          <div class="clear"></div>
-  		</div>
-  </div>
+<?php include('footer.php'); ?>
 </div>
 </body>
 </html>
